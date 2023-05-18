@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#FFF;
+    width: 100%;
+    position: relative;
+    font-family: roboto,sans-serif;
+}
+h1{
+	text-shadow:1px 1px #000;
+}
+
+h1 #de {
+    color: aliceblue;
+    margin-left: 15px;
+    background-color: cadetblue;
+} 
+
+.searchbox{
+    border:none;
+    border-bottom:1px solid #aaa;
+    background: transparent;
+    outline:none;
+    height: 30px;
+    color:#000;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.searchbox:hover{
+    width: 400px;
+    border-color: #1f80e0;
+    
+}
+.sub-btn{
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    outline:none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 10px 55px;
+}
+.sub-btn:hover{
+    background: orangered;
+}
+
+
+
+.movie-title{
+    padding-left: 37%;
+    text-transform: capitalize;
+    margin-top: 5px;
+    color: orangered;
+    background-color: #1f80e0;
+    border:5px solid seashell;
+}
+
+.movie-des{
+
+    line-height: 30px;
+    padding-left: 50px;
+    margin-top: 20px;
+    opacity: 0.8;
+    color: #000;
+}
+legend{
+    background-color:#1f80e0;
+    text-transform: capitalize;
+    border: orangered 2px solid;
+    border-radius: 5px;
+    color:  rgb(35, 36, 32);
+    padding: 5px 10px;
+}
+fieldset{
+    position: relative;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 20px;
+    border: double rgb(35, 36, 32,0.5);
+    
+}
+fieldset input{
+    margin: 5px;
+    
+}
+fieldset p{
+    padding-left: 10px;
+    color: #1f80e0;
+}
+
+.box{
+    width: 100vw;
+    height: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:5% ;
+    padding-right:5% ;
+    height: 70px;
+  }
+ 
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+  }
+  nav ul li a:hover{
+    color:orangered;
+    transition: 0.5s;
+  }
+  nav button{
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    border:none;
+    background:orangered;
+    color:white;
+    font-size: 15px;
+  }
+  nav button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color:white;
+    cursor: pointer;
+  }
+
+  
+  

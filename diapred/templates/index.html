@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diabetes prediction</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<hr>
+
+<div class="box">
+    <h1 class="movie-title">DIABETES PREDICTION</h1>
+    <nav>
+      <ul>
+        <li><a href="\www.diapred.com/templates/index.html" >Home</a></li>
+        <li><a href="\www.diapred.com/templates/about_project.html">About Project</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+</div>
+<p class="movie-des">Diabetes is a disease in which the body’s ability to produce or respond to the hormone insulin is impaired, resulting in abnormal metabolism of carbohydrates and elevated levels of glucose in the blood.</p>
+
+      <form action = "http://localhost:5000/result" method = "POST">
+	 <fieldset class="field">
+    	<legend > patient details:</legend>
+  	<p >Name: <input class="searchbox" type = "text" name = "name"></p>
+          <p>Insulin: <input class="searchbox" type = "text" name = "insulin" /></p>
+	 <p>DiabetesPedigreeFunction: <input class="searchbox" type = "text" name = "dpf" /></p>
+	<p>Age: <input class="searchbox" type = "text" name = "age" /></p>
+	<p>SkinThickness:<input class="searchbox" type = "text" name = "st" /></p>
+	 <p>BloodPressure: <input class="searchbox" type = "text" name = "bp" /></p>
+	 <p>Glucose: <input class="searchbox" type = "text" name = "glucose" /></p>
+	 <p>Pregnancies: <input class="searchbox" type = "text" name = "p" /></p>
+
+	<p>BMI: <input class="searchbox" type = "text" name = "bmi" /></p>
+    
+    <input type="submit" class="sub-btn" value="submit">
+    <p><br></p>
+  
+
+</fieldset>
+      </form>
+	
+   </body>
+</html>

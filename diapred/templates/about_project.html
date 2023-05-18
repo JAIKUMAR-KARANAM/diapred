@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diabetes prediction</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/about_style.css')}}">
+  
+  <script>
+  function calcBMI() {
+    var weight = document.bmiform.pounds.value, height = document.bmiform.inches.value;
+    document.bmiform.bmi.value = parseInt((weight * 703) / (height * height));
+  } 
+  </script>
+</head>
+
+<div class="box">
+    <h1 class="movie-title">DIABETES PREDICTION</h1>
+    <nav>
+      <ul>
+        <li><a href="\home" >Home</a></li>
+        <li><a href="\about_project">About Project</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  
+</div>
+<hr>
+
+<h1 class="movie-title">What is Diabetes?</h1>
+<hr>
+<p class='movie-des'><b>Definition of diabetes.</b><br>
+With diabetes, your body either doesn’t make enough insulin or can’t use it as well as it should.<br>
+
+Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.
+<br>
+Your body breaks down most of the food you eat into sugar (glucose) and releases it into your bloodstream..<br> When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.
+
+With diabetes, your body doesn’t make enough insulin or can’t use it as well as it should..<br> When there isn’t enough insulin or cells stop responding to insulin, too much blood sugar stays in your bloodstream. Over time, that can cause serious health problems, such as heart disease, vision loss, and kidney disease.
+
+There isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Other things you can do to help:.<br>
+
+Take medicine as prescribed.<br>
+Get diabetes self-management education and support.<br>
+Make and keep health care appointments..<br>
+Diabetes by the Numbers.<br>
+More than 37 million US adults have diabetes, and 1 in 5 of them don’t know they have it.<br>
+Diabetes is the seventh leading cause of death in the United States.<br>
+Diabetes is the No. 1 cause of kidney failure, lower-limb amputations, and adult blindness.<br>
+In the last 20 years, the number of adults diagnosed with diabetes has more than doubled.<br>
+Types of Diabetes<br>
+There are three main types of diabetes: type 1, type 2, and gestational diabetes (diabetes while pregnant).<br>
+
+Type 1 Diabetes<br>
+Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake). <br>This reaction stops your body from making insulin. Approximately 5-10% of the people who have diabetes have type 1. Symptoms of type 1 diabetes often develop quickly. It’s usually diagnosed in children, teens, and young adults.<br> If you have type 1 diabetes, you’ll need to take insulin every day to survive.<br> Currently, no one knows how to prevent type 1 diabetes.
+<br>
+Type 2 Diabetes<br>
+With type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal levels. About 90-95% of people with diabetes have type 2. It develops over many years and is usually diagnosed in adults (but more and more in children, teens, and young adults). You may not notice any symptoms, so it’s important to get your blood sugar tested if you’re at risk. Type 2 diabetes can be prevented or delayed with healthy lifestyle changes, such as:<br>
+<br>
+Losing weight.<br>
+Eating healthy food.<br>
+Being active.<br>
+Gestational Diabetes<br>
+Gestational diabetes develops in pregnant women who have never had diabetes. <br>If you have gestational diabetes, your baby could be at higher risk for health problems. Gestational diabetes usually goes away after your baby is born. However, it increases your risk for type 2 diabetes later in life. Your baby is more likely to have obesity as a child or teen and develop type 2 diabetes later in life.<br>
+<br>
+
+In the United States, 96 million adults—more than 1 in 3—have prediabetes. More than 8 in 10 of them don’t know they have it. With prediabetes, blood sugar levels are higher than normal, but not high enough for a type 2 diabetes diagnosis. Prediabetes raises your risk for type 2 diabetes, heart disease, and stroke. But there’s good news. <br>If you have prediabetes, a CDC-recognized lifestyle change program can help you take healthy steps to reverse it.<br>
+</p>
+
+</div>
+
+<div>
+  <p class="movie-des">Calculate your BMI (body mass index) by using the form below. Enter your weight and height and click the Calculate button to display your BMI result.</p>
+  <form action="none" method="post" name="bmiform">
+    <fieldset class="field">
+    <legend>Height and Weight</legend>
+      <label for="pounds">Weight (pounds):</label>
+      <input type="text" class="searchbox" name="pounds" id="pounds">
+      <br>
+      <label for="inches">Height (inches):</label>
+      <input type="text" class='searchbox' name="inches" id="inches">
+      <br>
+      <button type="button" class="sub-btn" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+   
+    <h1 class="movie-title">BMI</h1>
+      <label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+      <input type="text" name="bmi" id="bmi" readonly="readonly">
+    </fieldset>
+  </form>
+</div>
+
+
+
+   </body>
+</html>
